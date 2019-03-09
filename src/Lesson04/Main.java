@@ -1,3 +1,9 @@
+/**
+ * Java Start. Lesson04.
+ *
+ * @author Oleg Khrulov
+ * @version dated 07.03.2019
+ */
 package Lesson04;
 
 public class Main {

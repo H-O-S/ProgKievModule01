@@ -1,12 +1,12 @@
 /**
- * Java Start. Lesson04.
+ * Java Start. Lesson 04.
  *
  * @author Oleg Khrulov
  * @version dated 07.03.2019
  */
 package Lesson04;
 
-public class Main {
+public class MainL04 {
     public static void main(String[] args) {
 
         int[] x = new int[28];

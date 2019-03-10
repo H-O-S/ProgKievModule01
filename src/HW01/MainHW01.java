@@ -2,7 +2,7 @@
  * Java Start. Home Work 01.
  *
  * @author Oleg Khrulov
- * @version dated 29.02.2019
+ * @version dated 01.03.2019
  */
 package HW01;
 

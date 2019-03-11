@@ -6,8 +6,16 @@
  */
 package Lesson02;
 
+import java.util.Scanner;
+
 public class MainL02 {
     public static void main(String[] args) {
-        System.out.format("Hello!");
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter string: ");
+            String s = scanner.nextLine();
+            System.out.println("You printed: " + s);
+            System.out.print("Enter integer: ");
+            int i = scanner.nextInt();
+            System.out.println("You printed: " + i);
     }
 }

@@ -1,3 +1,9 @@
+/**
+ * Java Start. Home Work 02.
+ *
+ * @author Oleg Khrulov
+ * @version dated 11.03.2019
+ */
 package HW02;
 
 import java.util.Scanner;

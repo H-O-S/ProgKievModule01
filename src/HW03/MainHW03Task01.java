@@ -9,6 +9,7 @@ package HW03;
 import java.util.Arrays;
 import java.util.Scanner;
 
+@SuppressWarnings("Duplicates")
 public class MainHW03Task01 {
     public static void main(String[] args) {
 

@@ -14,6 +14,38 @@ package HW04;
 
 public class MainHW04Task01 {
     public static void main(String[] args) {
-        System.out.format("Hello!");
+
+        int[] array = new int[11];
+        int arrayElement = 0;
+
+        System.out.println("Display using  cycle for():");
+        for (int i = 0; i < array.length; i++){
+            array[i] = 10 + i;
+            System.out.println(array[i]);
+        }
+
+        System.out.println();
+        System.out.println("Display using  cycle for-each:");
+        for (int x : array) {
+            System.out.println(x);
+        }
+
+        System.out.println();
+        System.out.println("Display using  cycle while():");
+        while (arrayElement < array.length){
+            System.out.println(array[arrayElement]);
+            arrayElement++;
+        }
+
+        System.out.println();
+        System.out.println("Display using  cycle do-while:");
+        arrayElement = 0;
+        do {
+            System.out.println(array[arrayElement]);
+            arrayElement++;
+        } while (arrayElement < array.length);
+
+        System.out.println();
+        System.out.println("THE END!");
     }
 }

@@ -4,6 +4,11 @@
  * @author Oleg Khrulov
  * @version dated 07.03.2019
  */
+
+/*
+Вывести на экран 0-й, 14-й и 27-й элементы массива.
+*/
+
 package Lesson04;
 
 public class MainL04 {

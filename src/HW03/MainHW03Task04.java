@@ -4,6 +4,11 @@
  * @author Oleg Khrulov
  * @version dated 12.03.2019
  */
+
+/*
+        Среднее арифметическое элементов массива.
+*/
+
 package HW03;
 
 import java.util.Scanner;

@@ -4,6 +4,12 @@
  * @author Oleg Khrulov
  * @version dated 01.03.2019
  */
+
+/*
+        Набрать и запустить приведенный в задании код,
+        разобраться с выводимыми на экран параметрами.
+*/
+
 package HW01;
 
 public class MainHW01 {

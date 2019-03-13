@@ -4,6 +4,11 @@
  * @author Oleg Khrulov
  * @version dated 13.03.2019
  */
+
+/*
+        Написать код для зеркального переворота массива (1,2,3,4) -> (4,3,2,1).
+*/
+
 package HW03;
 
 import java.util.Arrays;

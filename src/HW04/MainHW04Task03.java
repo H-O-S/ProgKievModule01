@@ -11,8 +11,17 @@
 
 package HW04;
 
+import java.util.Arrays;
+
 public class MainHW04Task03 {
     public static void main(String[] args) {
-        System.out.format("Hello!");
+
+        int[] array = new int[101];
+
+        for (int i = 0; i < array.length; i++){
+            array[i] = 100 - i;
+        }
+
+        System.out.println(Arrays.toString(array));
     }
 }

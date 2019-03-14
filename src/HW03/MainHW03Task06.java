@@ -32,8 +32,7 @@ public class MainHW03Task06 {
 
         while (continueEntering){
             System.out.println("________________________________________________________________________________");
-            System.out.println();
-            System.out.print("Enter the index of the array element to display " +
+            System.out.print("\nEnter the index of the array element to display " +
                     "(values from '0' to '" + (array.length - 1) +
                     "' or '-1' to exit the program): ");
 
@@ -46,9 +45,8 @@ public class MainHW03Task06 {
             }
         }
 
-        System.out.println();
-        System.out.println("======================================================================================");
-        System.out.println("THE END!");
+        System.out.println("\n======================================================================================");
+        System.out.println("\nTHE END!");
 
         scanner.close();
     }

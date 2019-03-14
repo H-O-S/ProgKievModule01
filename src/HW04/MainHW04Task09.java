@@ -2,7 +2,7 @@
  * Java Start. Home Work 04.
  *
  * @author Oleg Khrulov
- * @version dated 13.03.2019
+ * @version dated 14.03.2019
  */
 
 /*
@@ -12,8 +12,25 @@
 
 package HW04;
 
+import java.util.Arrays;
+
+@SuppressWarnings("Duplicates")
 public class MainHW04Task09 {
+
+    private static void mirrorFlipValues(int[] array){
+        int[] resultArray = new int[array.length];
+
+        for (int i =0; i < array.length; i++){
+            resultArray[(array.length-1) - i] = array[i];
+        }
+
+        System.out.println(Arrays.toString(resultArray));
+    }
+
     public static void main(String[] args) {
-        System.out.format("Hello!");
+
+        int[] array = {1, 2, 3, 4};
+        mirrorFlipValues(array);
+
     }
 }

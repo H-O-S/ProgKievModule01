@@ -24,28 +24,24 @@ public class MainHW04Task01 {
             System.out.println(array[i]);
         }
 
-        System.out.println();
-        System.out.println("Display using  cycle for-each:");
+        System.out.println("\nDisplay using  cycle for-each:");
         for (int x : array) {
             System.out.println(x);
         }
 
-        System.out.println();
-        System.out.println("Display using  cycle while():");
+        System.out.println("\nDisplay using  cycle while():");
         while (arrayElement < array.length){
             System.out.println(array[arrayElement]);
             arrayElement++;
         }
 
-        System.out.println();
-        System.out.println("Display using  cycle do-while:");
+        System.out.println("\nDisplay using  cycle do-while:");
         arrayElement = 0;
         do {
             System.out.println(array[arrayElement]);
             arrayElement++;
         } while (arrayElement < array.length);
 
-        System.out.println();
-        System.out.println("THE END!");
+        System.out.println("\nTHE END!");
     }
 }

@@ -15,6 +15,20 @@ package HW04;
 
 public class MainHW04Task06 {
     public static void main(String[] args) {
-        System.out.format("Hello!");
+
+        int[] array = {11,28,-13,24,-5,16,37,-81,19,10};
+        int maxValue = Integer.MIN_VALUE;
+        int minValue = Integer.MAX_VALUE;
+
+        for (int arrayElement : array) {
+            if (maxValue < arrayElement) {
+                maxValue = arrayElement;
+            }
+            if (minValue > arrayElement) {
+                minValue = arrayElement;
+            }
+        }
+
+        System.out.printf("maxValue = %d \nminValue = %d", maxValue, minValue);
     }
 }

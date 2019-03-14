@@ -2,7 +2,7 @@
  * Java Start. Home Work 04.
  *
  * @author Oleg Khrulov
- * @version dated 13.03.2019
+ * @version dated 14.03.2019
  */
 
 /*
@@ -15,8 +15,15 @@
 
 package HW04;
 
+import java.util.Scanner;
+
 public class MainHW04Task08 {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        int arrayLength = scanner.nextInt();
+
         System.out.format("Hello!");
     }
 }

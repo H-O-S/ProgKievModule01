@@ -42,5 +42,7 @@ public class MainHW04Task10 {
         int[] array = new int[scanner.nextInt()];
 
         System.out.println(Arrays.toString(fillArray(array)));
+
+        scanner.close();
     }
 }

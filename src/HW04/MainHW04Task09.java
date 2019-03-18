@@ -17,20 +17,18 @@ import java.util.Arrays;
 @SuppressWarnings("Duplicates")
 public class MainHW04Task09 {
 
-    private static void mirrorFlipValues(int[] array){
+    private static int[] mirrorFlipValues(int[] array){
         int[] resultArray = new int[array.length];
 
         for (int i =0; i < array.length; i++){
             resultArray[(array.length-1) - i] = array[i];
         }
-
-        System.out.println(Arrays.toString(resultArray));
+        return resultArray;
     }
 
     public static void main(String[] args) {
 
         int[] array = {1, 2, 3, 4};
-        mirrorFlipValues(array);
-
+        System.out.println(Arrays.toString(mirrorFlipValues(array)));
     }
 }

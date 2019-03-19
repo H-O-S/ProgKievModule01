@@ -12,7 +12,6 @@
         операций не учитывается.
 */
 
-
 package HW04;
 
 import java.util.Scanner;
@@ -25,5 +24,7 @@ public class MainHW04Task08 {
         int arrayLength = scanner.nextInt();
 
         System.out.format("Hello!");
+
+        scanner.close();
     }
 }

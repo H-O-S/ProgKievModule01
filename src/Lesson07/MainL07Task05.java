@@ -6,8 +6,10 @@
  */
 package Lesson07;
 
-public class MainL07 {
+import java.util.Arrays;
+
+public class MainL07Task05 {
     public static void main(String[] args) {
-        System.out.format("Hello!");
+
     }
 }

@@ -3,25 +3,31 @@
  *
  * @author Oleg Khrulov
  * @version dated 21.03.2019
- *//*
+ */
 
 
-*/
 /*
         Дан словарь в виде «англ. слово=русское слово, англ.
         слово=русское слово,…». Написать программу переводчик
         на основе словаря.
-*//*
+*/
+
 
 
 package Lesson08;
+
+import java.util.Arrays;
 
 public class MainL08Task03 {
     public static void main(String[] args) {
         String words = "Hello=привет;Word=Мир";
         String eng = "Hello, world!";
         String[][] dictionary = prepareDiction(words);
+        System.out.println(Arrays.toString(dictionary[0]));
+        System.out.println(Arrays.toString(dictionary[1]));
+
         String translated = translate(eng, dictionary);
+
         System.out.println(translated);
     }
 
@@ -38,7 +44,9 @@ public class MainL08Task03 {
 
     static String translate(String input, String[][] dct){
         String[] words = input.split(" ");
+        System.out.println(Arrays.toString(words));
         StringBuilder result = new StringBuilder();
+
         for (String word: words){
             result.append(translateWord(word, dct)).append(" ");
         }
@@ -50,6 +58,7 @@ public class MainL08Task03 {
         char lastSymbol = word.charAt(word.length() - 1);
         boolean endsWithAlpha = Character.isAlphabetic(lastSymbol);
         StringBuilder result = new StringBuilder();
+
         if (!endsWithAlpha){
             word = word.substring(0, word.length() - 1);
         }
@@ -62,8 +71,10 @@ public class MainL08Task03 {
         if (!capitalized){
             result.setCharAt(0, Character.toLowerCase(result.charAt(0)));
         }else {
-            result.setCharAt(0, Character.toUpperCase(result.charAt(0)));
+            System.out.println(result.charAt(0));
+            System.out.println(Character.toUpperCase(result.charAt(0)));
 
+            result.setCharAt(0, Character.toUpperCase(result.charAt(0)));
         }
         if (!endsWithAlpha){
             result.append(lastSymbol);
@@ -71,4 +82,3 @@ public class MainL08Task03 {
         return result.toString();
     }
 }
-*/

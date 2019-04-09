@@ -2,7 +2,7 @@
  * Java Start. Home Work 05.
  *
  * @author Oleg Khrulov
- * @version dated 10.03.2019
+ * @version dated 10.04.2019
  */
 
 /*
@@ -12,8 +12,27 @@
 
 package HW05;
 
+import java.util.Arrays;
+
 public class MainHW05Task02 {
+    private static byte[] arrayByte = new byte[10];
+    private static int[] arrayInt = new int[10];
+
+    private static int sizeOfByte(byte[] array) {
+        return array.length;
+    }
+    private static int sizeOfByte(int[] array) {
+        return array.length * 4;
+    }
+
     public static void main(String[] args) {
-        System.out.format("Hello!");
+        for (int i = 0; i < 10; i++){
+            arrayByte[i] = (byte) (Math.random() * 100);
+            arrayInt[i] = (int) (Math.random() * 100);
+        }
+
+        System.out.println(sizeOfByte(arrayByte) + ", " + sizeOfByte(arrayInt));
+        System.out.println(Arrays.toString(arrayByte));
+        System.out.println(Arrays.toString(arrayInt));
     }
 }

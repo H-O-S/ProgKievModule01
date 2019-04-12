@@ -12,6 +12,7 @@
 package HW06;
 
 public class MainHW06Task03 {
+    @SuppressWarnings("Duplicates")
     static String toString(int[] array){
         StringBuilder stringBuilder = new StringBuilder("int[] array [");
 

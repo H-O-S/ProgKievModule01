@@ -21,20 +21,18 @@ import java.util.Scanner;
 public class MainHW06Task01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Date dateEntered = new Date();
         Date systemDate = new Date();
+        Date dateEntered;
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd");
         SimpleDateFormat dateFormatYear = new SimpleDateFormat("yyyy");
         SimpleDateFormat dateFormatMonth = new SimpleDateFormat("MM");
         SimpleDateFormat dateFormatDay = new SimpleDateFormat("dd");
 
-
         System.out.println("Input date in format - yyyy.MM.dd:");
-        String dateText = scanner.nextLine();
 
         try {
-            dateEntered = dateFormat.parse(dateText);
+            dateEntered = dateFormat.parse(scanner.nextLine());
 
             System.out.println(dateEntered);
             System.out.println(systemDate);
@@ -50,7 +48,6 @@ public class MainHW06Task01 {
                 String systemDateYear = dateFormatYear.format(systemDate);
                 String systemDateMonth = dateFormatMonth.format(systemDate);
                 String systemDateDay = dateFormatDay.format(systemDate);
-
 
                 if (!dateEnteredYear.equals(systemDateYear)){
                     System.out.println("The year of the entered date and the system date are NOT equal!");

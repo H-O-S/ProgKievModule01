@@ -2,7 +2,7 @@
  * Java Start. Home Work 06.
  *
  * @author Oleg Khrulov
- * @version dated 19.03.2019
+ * @version dated 12.04.2019
  */
 
 /*

@@ -2,7 +2,7 @@
  * Java Start. Home Work 06.
  *
  * @author Oleg Khrulov
- * @version dated 19.03.2019
+ * @version dated 12.04.2019
  */
 
 /*
@@ -12,8 +12,20 @@
 
 package HW06;
 
+import java.util.Scanner;
+
 public class MainHW06Task05 {
     public static void main(String[] args) {
-        System.out.println("Hello!");
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Input binary number:");
+
+            System.out.printf("The binary number entered above is equal %nto the next integer in decimal:%n%d%n",
+                    Integer.parseInt(scanner.nextLine(), 2));
+
+            scanner.close();
+        } catch (NumberFormatException e) {
+            System.out.println("Input Error!");
+        }
     }
 }

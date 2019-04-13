@@ -1,2 +1,2 @@
 # ProgKievModule01
-Practical tasks
+Practical tasks for the course "Java Start" at school ProgKievUA

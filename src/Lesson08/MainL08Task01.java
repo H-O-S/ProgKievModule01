@@ -17,6 +17,8 @@ public class MainL08Task01 {
         for (char letter = 'a'; letter <= 'z'; letter++){
             System.out.print(Character.toUpperCase(letter));
             System.out.print(letter);
+            System.out.print(letter);
+
         }
     }
 }
